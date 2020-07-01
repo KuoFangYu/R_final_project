@@ -7,8 +7,8 @@ install.packages("ggplot2")
 library(ggplot2)
 library(jsonlite)
 
-url <- "https://quality.data.gov.tw/dq_download_json.php?nid=9634&md5_url=7b41ec11a497a37184b82402be86eda5"  
-# get the URL
+url <- "https://quality.data.gov.tw/dq_download_json.php?nid=9634&md5_url=7b41ec11a497a37184b82402be86eda5"   # get the URL
+
 adata <- as.data.frame( fromJSON(url) )   # Convert to dataframe
 cat("please input Occupation's number")   
 t <- colnames(adata)
